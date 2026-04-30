@@ -6,21 +6,21 @@ require_relative "../lib/custom_download_strategy"
 class Autopilot < Formula
   desc "Autonomous agentic coding pipeline"
   homepage "https://github.com/arap-korir/autopilot"
-  version "0.0.11"
+  version "0.0.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.11/autopilot_0.0.11_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "a2fedc7e080bbe6e7ff47e3b2889f0aa62a2135080a3e412ecebcf9e8187060a"
+      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.12/autopilot_0.0.12_darwin_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "635d6cc2c9d6844bbda29433e258c291c874b91a8c5eff76d24e32dafce039c0"
 
       define_method(:install) do
         bin.install "autopilot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.11/autopilot_0.0.11_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "a909713323c8744b145f52c9fd8bde48522c549a92b57c9f583b3f8af467de6e"
+      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.12/autopilot_0.0.12_darwin_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "40799a8e38b20bb8c6501bea75fe168f0e234907c9c7db476b737df3444500b0"
 
       define_method(:install) do
         bin.install "autopilot"
@@ -30,15 +30,15 @@ class Autopilot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.11/autopilot_0.0.11_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "85f938fcf9129f61b269d14cc71518f42101b661d80d58d6db145eea3fef513b"
+      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.12/autopilot_0.0.12_linux_amd64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "507d277f6b2693aa76cd103604cdebb6dfed65e4db78a762830acbc13b4370d2"
       define_method(:install) do
         bin.install "autopilot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.11/autopilot_0.0.11_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
-      sha256 "00f1a123a0448de74fc744a57a373ef29582ee99bd1f43d167ebb38d9a3190fc"
+      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.12/autopilot_0.0.12_linux_arm64.tar.gz", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      sha256 "32ecf8e4f66d25aa0a41d89bc50da48ad2ef93934ca272597800a621b24f4b7b"
       define_method(:install) do
         bin.install "autopilot"
       end

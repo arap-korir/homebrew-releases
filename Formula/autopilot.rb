@@ -5,21 +5,21 @@
 class Autopilot < Formula
   desc "Autonomous agentic coding pipeline"
   homepage "https://github.com/arap-korir/autopilot"
-  version "0.3.0"
+  version "0.0.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.3.0/autopilot_0.3.0_darwin_amd64.tar.gz"
-      sha256 "045402f6166269835f83ac207392b53a1bc3533b736048f3f7260662303dd291"
+      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.1/autopilot_0.0.1_darwin_amd64.tar.gz"
+      sha256 "2d4d505cefd7315c26186665356d2bc1bdb7c3f3b3272f779a58528f7eff8e5c"
 
       define_method(:install) do
         bin.install "autopilot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.3.0/autopilot_0.3.0_darwin_arm64.tar.gz"
-      sha256 "33838dfae70b41dc4266f06bbd2357dbf721235cd08dce225cfc9193114e66ed"
+      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.1/autopilot_0.0.1_darwin_arm64.tar.gz"
+      sha256 "882e18200c109c96a46a303c80f1c9d399080faad57d4538a9b587a1035a595f"
 
       define_method(:install) do
         bin.install "autopilot"
@@ -29,15 +29,15 @@ class Autopilot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.3.0/autopilot_0.3.0_linux_amd64.tar.gz"
-      sha256 "b9404ee2f450312099d06d9606b6e4890f3241d6a1cc3333d772563023928fd1"
+      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.1/autopilot_0.0.1_linux_amd64.tar.gz"
+      sha256 "cdaaafe4d8b1089d26d81fa5571ed197bea1373e62003453c64703896582d650"
       define_method(:install) do
         bin.install "autopilot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.3.0/autopilot_0.3.0_linux_arm64.tar.gz"
-      sha256 "6b9c68b4f6303d7ba0c7d9a43850171218cb06781f4d6302fe311fe49220f2f8"
+      url "https://github.com/arap-korir/homebrew-releases/releases/download/v0.0.1/autopilot_0.0.1_linux_arm64.tar.gz"
+      sha256 "cf1eee4d45354bc3ccf0ad747b94cc3ba4ebc1ce3a6ac334ace916b1b2ae644c"
       define_method(:install) do
         bin.install "autopilot"
       end
